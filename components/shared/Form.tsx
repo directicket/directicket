@@ -5,7 +5,8 @@ import { Input } from '../ui/input'
 const Form = () => {
   return (
     <div className='contact-container p-medium-16 flex-col flex items-center justify-center wrapper w-[350px]'>
-        <form action="" className='contact-left items-center justify-center'>
+        <form action="https://api.web3forms.com/submit" method="POST" className='contact-left items-center justify-center'>
+            <input type="hidden" name="access_key" value="e85da356-df4d-4824-9b02-75f750084417"></input>
             <input type='text' name='name' placeholder='Your Name (required)' className='w-[350px] contact-inputs 
             rounded-lg' required></input>
             <input type='text' name='username' placeholder='Your Social Media handle (required)' 
